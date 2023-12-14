@@ -1,0 +1,41 @@
+@import '../../styles/helpers/variables';
+
+.successReg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+
+    & img {
+        width: 7.875rem;
+        height: 7.875rem;
+
+        @media (width <=$breakpoint-xxs) {
+            width: 5.625rem;
+            height: 5.625rem;
+        }
+    }
+}
+
+.title {
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 113.636%;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media (width <=$breakpoint-xxs) {
+        font-size: 1.75rem;
+        line-height: 114.286%;
+    }
+}
+
+.text {
+    font-size: 1.5rem;
+    line-height: 133.333%;
+
+    @media (width <=$breakpoint-xxs) {
+        font-size: 1rem;
+        line-height: 112.5%;
+    }
+}

@@ -1,0 +1,31 @@
+@import '../../../styles/helpers/variables';
+
+.loader {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    display: block;
+    margin: 0.937rem auto;
+    position: relative;
+    background: #FFF;
+    box-shadow: -1.5rem 0 #FFF, 1.5rem 0 #FFF;
+    box-sizing: border-box;
+    animation: shadow-pulse 2s linear infinite;
+}
+
+@keyframes shadow-pulse {
+    33% {
+        background: #FFF;
+        box-shadow: -1.5rem 0 $color-dark-blue, 1.5rem 0 #FFF;
+    }
+
+    66% {
+        background: $color-dark-blue;
+        box-shadow: -1.5rem 0 #FFF, 1.5rem 0 #FFF;
+    }
+
+    100% {
+        background: #FFF;
+        box-shadow: -1.5rem 0 #FFF, 1.5rem 0 $color-dark-blue;
+    }
+}

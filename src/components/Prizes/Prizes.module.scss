@@ -1,0 +1,102 @@
+@import '../../styles/helpers/variables';
+
+.prizes {
+    margin-bottom: 2.625rem;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 9.187rem;
+        height: 7.625rem;
+        background-image: url('../../assets/images/tendril.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: 0;
+        left: -2.75rem;
+        z-index: -1;
+    
+        @media (width <$breakpoint-sm) {
+          display: none;
+        }
+      }
+}
+
+.title {
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 115.385%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2.5rem;
+
+    @media (width <=$breakpoint-sm) {
+        font-size: 1.75rem;
+        line-height: 100%;
+        margin-bottom: 1.25rem;
+    }
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 100%;
+    margin-bottom: 1.875rem;
+
+    @media (width <=$breakpoint-sm) {
+        font-size: 1.25rem;
+        line-height: 120%;
+        margin-bottom: 0.625rem;
+    }
+}
+
+.guaranteedPrize {
+    border-radius: 2.25rem;
+    background: $color-grey;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 11.46%;
+    padding: 2.625rem 1.31rem 2.75rem 1.125rem;
+    margin-bottom: 2.5rem;
+
+    & span {
+        display: inline-block;
+        max-width: 217.68rem;
+        font-size: 1.5rem;
+        line-height: 133.333%;
+
+        @media (width <=$breakpoint-sm) {
+            max-width: 9.68rem;
+            font-size: 1rem;
+        }
+    }
+
+    & .prizeWrapper {
+        width: 25.43%;
+        height: auto;
+
+        @media (width <=$breakpoint-sm) {
+            width: 34.63%;
+        }
+
+        & img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.allPrizes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+
+    @media (width <=$breakpoint-sm) {
+        gap: 0.625rem;
+    }
+}

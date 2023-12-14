@@ -1,0 +1,54 @@
+@import '../../../styles/helpers/variables';
+
+.inputWrapper {
+    display: flex;
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+
+.input {
+    appearance: none;
+    cursor: pointer;
+
+    &::before {
+        position: absolute;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 0.5rem;
+        content: '';
+        top: 0;
+        left: 0;
+        background-color: #fff;
+    }
+
+    &.error {
+        &::before {
+            border: 0.125rem solid $color-red;
+        }
+    }
+
+    &:checked {
+        &::before {
+            background-image: url('../../../assets/images/checkbox_active.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            border: 0.125rem solid transparent;
+        }
+    }
+}
+
+.label {
+    margin-left: 2.125rem;
+    font-size: 1.125rem;
+    line-height: 120%;
+
+    & a {
+        color: $color-dark-blue;
+        text-decoration-line: underline;
+    }
+
+    @media (width <=$breakpoint-xxs) {
+        font-size: 1rem;
+        line-height: 112.5%;
+    }
+}

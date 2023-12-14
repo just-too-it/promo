@@ -1,0 +1,23 @@
+@import '../../styles/helpers/variables';
+
+.btn-desktop {
+    width: 22.5rem;
+    padding: 1.25rem 2.25rem;
+    margin: 0 auto 4.937rem;
+    display: block;
+
+    @media (width <=$breakpoint-sm) {
+        display: none;
+    }
+}
+
+.btn-mobile {
+    display: none;
+
+    @media (width <=$breakpoint-sm) {
+        padding: 1rem 2.5rem;
+        display: block;
+        width: 100%;
+        margin: 0 auto 3.125rem;
+    }
+}
