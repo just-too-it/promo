@@ -5,6 +5,7 @@ body {
   font-family: Circe, sans-serif;
   line-height: 1;
   position: relative;
+  overflow-x: hidden;
 
   &::after {
     position: absolute;
