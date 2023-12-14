@@ -26,4 +26,4 @@
 
 
 ## Deploy  
-https://vercel.com/just-too-it/promo
+https://promo-sooty.vercel.app/
