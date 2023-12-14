@@ -11,6 +11,7 @@ import { Loader } from 'components/ui/Loader';
 import { postRegByEmail } from 'store/action-creators/reg';
 
 import styles from './Form.module.scss';
+import { setParams } from 'store/entities/regSlice';
 
 export const Form = () => {
   const {
@@ -30,6 +31,7 @@ export const Form = () => {
       phone: data.phone,
       assent: data.assent,
     };
+    dispatch(setParams(params));
     dispatch(postRegByEmail(params));
   };
 
